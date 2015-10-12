@@ -32,10 +32,11 @@ class Journal
 
   formattedTimeForDate: (date) ->
     hours = date.getHours()
-    if hours > 12
-      hours = hours - 12
+    if hours >= 12
+      hours = hours - 12 if hours > 12
       suffix = "PM"
     else
+      hours = 12 if hours is 0
       suffix = "AM"
 
     minutes = date.getMinutes()
