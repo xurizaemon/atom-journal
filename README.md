@@ -38,6 +38,7 @@ First, let's clone the repository and `apm link` it so that Atom loads it as a p
 ```
 git clone https://github.com/nathansobo/journal.git
 cd journal
+apm install
 apm link
 ```
 
